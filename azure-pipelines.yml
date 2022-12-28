@@ -5,12 +5,14 @@
 
 trigger:
   - dev
+  - pre-prod
+  - prod
   
-  pool:
-    vmImage: ubuntu-latest
-  
+pool:
+  vmImage: ubuntu-latest
+
   steps:
-  
-  - script: |
-      echo "hello world"
-    displayName: 'hello world'
+
+    - script: |
+        echo "hello world"
+      displayName: 'hello world'
