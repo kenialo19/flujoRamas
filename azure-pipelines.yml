@@ -4,15 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-  - dev
-  - pre-prod
   - prod
   
 pool:
   vmImage: ubuntu-latest
 
-  steps:
+steps:
 
-    - script: |
-        echo 'hello world'
-      displayName: 'hello world'
+  - script: |
+      echo 'hello world'
+    displayName: 'hello world'
