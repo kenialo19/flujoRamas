@@ -9,8 +9,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-  steps:
-
-    - script: |
-        echo 'hello world'
-      displayName: 'hello world'
+steps:
+  - script: |
+      echo 'hello world'
+    displayName: 'hello world'
